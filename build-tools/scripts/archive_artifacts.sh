@@ -2,8 +2,15 @@
 
 # Archive the shim efi binaries and generate a checksum
 
-cd install_path
+cd cisco_common_shim
 
-tar -czvf cisco_common_shim_v_${1}.tar.gz -C install_path/ .
+# Determine the version 
 
-openssl dgst -sha512 cisco_common_shim_v_${1}.tar.gz > cisco_common_shim_v_${1}.tar.gz.sha512
+export VERSION=`grep -P "VERSION\t" Makefile | awk -F = '{ print $2 } ' | tr -d ' '`
+
+tar -czvf cisco_common_shim_v_$VERSION.tar.gz -C install_path/ .
+
+openssl dgst -sha512 cisco_common_shim_v_$VERSION.tar.gz > cisco_common_shim_v_$VERSION.tar.gz.sha512
+
+
+

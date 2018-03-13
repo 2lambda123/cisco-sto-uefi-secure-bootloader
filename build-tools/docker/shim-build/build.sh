@@ -1,7 +1,6 @@
 #!/bin/bash
 set -x
-cd /workspace/shim
-VERSION=`grep -P "VERSION\t" Makefile | awk -F = '{ print $2 } ' | tr -d ' '`
+cd /workspace/cisco_common_shim
 id
 make VENDOR_CERT_FILE=build-tools/certs/trca.der
 mkdir -p install_path
