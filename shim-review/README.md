@@ -67,7 +67,7 @@ What OS and toolchain must we use to reproduce this build?  Include where to fin
 -------------------------------------------------------------------------------
 Which files in this repo are the logs for your build?   This should include logs for creating the buildroots, applying patches, doing the build, creating the archives, etc.
 -------------------------------------------------------------------------------
-[your text here]
+https://raw.githubusercontent.com/cisco/sto-uefi-secure-bootloader/master/shim-review/build.log
 
 
 -------------------------------------------------------------------------------
