@@ -10,10 +10,11 @@ Make sure you have provided the following information:
 
 
 ###### What organization or people are asking to have this signed:
-`[your text here]`
+Cisco Sytems
+IANA Enterprise Number 9
 
 ###### Version of shim:
-`[your text here]`
+https://github.com/rhboot/shim/releases/tag/14
 
 ###### Sysdev Submission ID:
 `[your text here]`

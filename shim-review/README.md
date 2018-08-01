@@ -1,7 +1,5 @@
-This repo is for review of requests for signing shim.  To create a request for review:
+To create a request for review:
 
-- clone this repo
-- edit the template below
 - add the shim.efi to be signed
 - add build logs
 - commit all of that
@@ -18,7 +16,7 @@ Here's the template:
 -------------------------------------------------------------------------------
 What organization or people are asking to have this signed:
 -------------------------------------------------------------------------------
-[your text here]
+Cisco Systems
 
 -------------------------------------------------------------------------------
 What product or service is this for:
@@ -49,12 +47,12 @@ Who is the secondary contact for security updates, etc.
 -------------------------------------------------------------------------------
 What upstream shim tag is this starting from:
 -------------------------------------------------------------------------------
-[our url here]
+https://github.com/rhboot/shim/releases/tag/14
 
 -------------------------------------------------------------------------------
 URL for a repo that contains the exact code which was built to get this binary:
 -------------------------------------------------------------------------------
-[your url here]
+https://github.com/cisco/sto-uefi-secure-bootloader
 
 -------------------------------------------------------------------------------
 What patches are being applied and why:
