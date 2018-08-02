@@ -12,7 +12,6 @@ shim_cert.h
 *.db.attr.old
 *.db.old
 *.domain.txt
-*.efi
 *.efi.debug
 *.efi.signed
 *.key

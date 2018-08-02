@@ -21,28 +21,28 @@ Cisco Systems
 -------------------------------------------------------------------------------
 What product or service is this for:
 -------------------------------------------------------------------------------
-[your text here]
+Cisco Appliances and Virtual products that are using Linux based Opererating Systems
 
 -------------------------------------------------------------------------------
 What's the justification that this really does need to be signed for the whole world to be able to boot it:
 -------------------------------------------------------------------------------
-[your text here]
+Customers using Cisco Virtual products that run on 3rd party servers (DELL, HP...) do not have permissions to
+change the UEFI db and add our keys.  The Microsoft signed SHIM allows these products to securely run on those
+platforms
 
 -------------------------------------------------------------------------------
 Who is the primary contact for security updates, etc.
 -------------------------------------------------------------------------------
-- Name:
-- Position:
-- Email address:
-- PGP key, signed by the other security contacts, and preferably also with signatures that are reasonably well known in the linux community:
+- Name: Dan Osman
+- Position: Senior Software Engineer
+- Email address: dosman@cisco.com
 
 -------------------------------------------------------------------------------
 Who is the secondary contact for security updates, etc.
 -------------------------------------------------------------------------------
-- Name:
-- Position:
-- Email address:
-- PGP key, signed by the other security contacts, and preferably also with signatures that are reasonably well known in the linux community:
+- Name: Peter Panburana
+- Position: Software Engineer
+- Email address: pepanbur@cisco.com
 
 -------------------------------------------------------------------------------
 What upstream shim tag is this starting from:
@@ -57,26 +57,25 @@ https://github.com/cisco/sto-uefi-secure-bootloader
 -------------------------------------------------------------------------------
 What patches are being applied and why:
 -------------------------------------------------------------------------------
-[your text here]
+none
 
 -------------------------------------------------------------------------------
 What OS and toolchain must we use to reproduce this build?  Include where to find it, etc.  We're going to try to reproduce your build as close as possible to verify that it's really a build of the source tree you tell us it is, so these need to be fairly thorough. At the very least include the specific versions of gcc, binutils, and gnu-efi which were used, and where to find those binaries.
 -------------------------------------------------------------------------------
-[your text here]
+Tools versions are listed in the build.log.
 
 -------------------------------------------------------------------------------
 Which files in this repo are the logs for your build?   This should include logs for creating the buildroots, applying patches, doing the build, creating the archives, etc.
 -------------------------------------------------------------------------------
-https://raw.githubusercontent.com/cisco/sto-uefi-secure-bootloader/master/shim-review/build.log
-
+https://github.com/cisco/sto-uefi-secure-bootloader/blob/cisco-shim-x64-20180802/shim-review/build.log
 
 -------------------------------------------------------------------------------
 Put info about what bootloader you're using, including which patches it includes to enforce Secure Boot here:
 -------------------------------------------------------------------------------
-[your text here]
+GRUB2 shipping with CentOS 7, and Ubuntu
 
 -------------------------------------------------------------------------------
 Put info about what kernel you're using, including which patches it includes to enforce Secure Boot here:
 -------------------------------------------------------------------------------
-[your text here]
+Standard kernels from CentOS 7 and Ubuntu. Secure boot support flags enabled during builds
 
