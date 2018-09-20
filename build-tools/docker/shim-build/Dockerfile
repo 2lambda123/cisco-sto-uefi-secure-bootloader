@@ -3,14 +3,15 @@
 # based on Centos 7 
 ############################################################
 
-FROM docker.io/centos:7 
+#FROM docker.io/centos:7
+FROM ciscosecuritytrustops/rpmbuilder:rpmbuilder:7.5.1804-1 
 
 # File Author / Maintainer
 MAINTAINER Peter Panburana (pepanbur@cisco.com)
 
 #Install basic build environment and headers
 RUN yum groupinstall -y "Development Tools"
-RUN yum install -y openssl-devel gnu-efi-devel elfutils-libelf-devel git openssl
+RUN yum install -y openssl-devel gnu-efi-devel elfutils-libelf-devel git openssl lcab
 
 #Install fpm and its dependencies
 RUN yum install -y ruby-devel rpm-build rubygems
