@@ -4,7 +4,7 @@
 ############################################################
 
 #FROM docker.io/centos:7
-FROM ciscosecuritytrustops/rpmbuilder:rpmbuilder:7.5.1804-1 
+FROM ciscosecuritytrustops/rpmbuilder:7.5.1804-1 
 
 # File Author / Maintainer
 MAINTAINER Peter Panburana (pepanbur@cisco.com)
