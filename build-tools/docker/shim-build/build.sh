@@ -25,8 +25,8 @@ openssl dgst -sha256 install_path/fbx64.efi
 
 # Create SHA256 hash files
 
-sha256sum install_path/shimx64.efi install_path/shimx64.efi.sha256
-sha256sum install_path/mmx64.efi install_path/mmx64.efi.sha256
-sha256sum install_path/fbx64.efi install_path/fbx64.efi.sha256
+sha256sum install_path/shimx64.efi > install_path/shimx64.efi.sha256
+sha256sum install_path/mmx64.efi > install_path/mmx64.efi.sha256
+sha256sum install_path/fbx64.efi > install_path/fbx64.efi.sha256
 
 
