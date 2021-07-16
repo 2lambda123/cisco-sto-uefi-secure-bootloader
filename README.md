@@ -1,3 +1,10 @@
+**Note:** *This version of the shim was submitted for review by Redhat. See 
+[Redhat Shim Review Sumission #126](https://github.com/rhboot/shim-review/issues/126).
+However,due to new SBAT requirements being introduced, all submitters were required 
+to move to the shim 15.4 version and the submission was closed as incomplete. 
+No shim will be released with this branch. Move along to the next branch to 
+find a release.*
+
 shim is a trivial EFI application that, when run, attempts to open and
 execute another application. It will initially attempt to do this via the
 standard EFI LoadImage() and StartImage() calls. If these fail (because secure
