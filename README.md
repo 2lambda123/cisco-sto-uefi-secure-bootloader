@@ -22,5 +22,5 @@ pub.cer and build with "make VENDOR_CERT_FILE=pub.cer".
 There are a couple of build options, and a couple of ways to customize the
 build, described in BUILDING.
 
-This branch uses docker to build the shim based on the Redhat 15.2 version. The 
+This branch uses docker to build the shim based on the Redhat 15.4 version. The 
 source is pulled directly from https://github.com/rhboot/shim.git.
