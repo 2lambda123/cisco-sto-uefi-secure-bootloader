@@ -140,7 +140,7 @@ Using downstream implementations from Almalinux and Canonical
   * CVE-2023-4693
   * CVE-2023-4692
 *******************************************************************************
-Yes [Double Check]
+These CVEs are addreessed in the parent distros. We do not modify the source of the grub.
 
 *******************************************************************************
 ### If these fixes have been applied, is the upstream global SBAT generation in your GRUB2 binary set to 4?
