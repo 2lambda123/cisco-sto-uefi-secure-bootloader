@@ -86,7 +86,7 @@ Yes, we created the shim binaries from the 15.7 shim release at https://github.c
 *******************************************************************************
 ### URL for a repo that contains the exact code which was built to get this binary:
 *******************************************************************************
-https://wwwin-github.cisco.com/jaguars/jaguars-shim/tree/dev/shim-review [UPDATE IN EXT REPO]
+https://github.com/cisco/sto-uefi-secure-bootloader/tree/rel_5/shim-review
 
 *******************************************************************************
 ### What patches are being applied and why:
@@ -191,7 +191,7 @@ N/A
 ### What OS and toolchain must we use to reproduce this build?  Include where to find it, etc.  We're going to try to reproduce your build as closely as possible to verify that it's really a build of the source tree you tell us it is, so these need to be fairly thorough. At the very least include the specific versions of gcc, binutils, and gnu-efi which were used, and where to find those binaries.
 ### If the shim binaries can't be reproduced using the provided Dockerfile, please explain why that's the case and what the differences would be.
 *******************************************************************************
-The Makefile is https://wwwin-github.cisco.com/jaguars/jaguars-shim/blob/dev/shim-review/Makefile which uses the Dockerfile https://wwwin-github.cisco.com/jaguars/jaguars-shim/blob/dev/shim-review/Dockerfile . [UPDATE IN EXT REPO]
+The Makefile is https://github.com/cisco/sto-uefi-secure-bootloader/blob/rel_5/shim-review/Makefile which uses the Dockerfile https://github.com/cisco/sto-uefi-secure-bootloader/blob/rel_5/shim-review/Dockerfile .
 
 You can use 
 
@@ -203,7 +203,7 @@ make build-no-cache
 ### Which files in this repo are the logs for your build?
 This should include logs for creating the buildroots, applying patches, doing the build, creating the archives, etc.
 *******************************************************************************
-The log file is: https://wwwin-github.cisco.com/jaguars/jaguars-shim/blob/dev/shim-review/build.log [UPDATE IN EXT REPO]
+The log file is: https://github.com/cisco/sto-uefi-secure-bootloader/blob/rel_5/shim-review/build.log
 
 *******************************************************************************
 ### What changes were made since your SHIM was last signed?
