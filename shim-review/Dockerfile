@@ -1,0 +1,29 @@
+# run "docker pull ubuntu:jammy" before building. 
+FROM ubuntu:jammy
+
+RUN sed -i 's/# deb-src/deb-src/' /etc/apt/sources.list && \
+    apt update -y && \
+    DEBIAN_FRONTEND=noninteractive apt install -y devscripts git-buildpackage software-properties-common && \
+    apt build-dep -y shim
+
+# Clone shim
+RUN git clone -b "15.7" https://github.com/rhboot/shim.git /shim-build
+WORKDIR /shim-build
+
+# Add our public certificate
+ADD Cisco_Virtual_UEFI_SubCA_v3.der .
+
+# Create build directory
+RUN mkdir build-x64
+
+# Add our SBAT data
+ADD sbat.csv data/sbat.csv
+
+# Build 64-bit
+RUN make update
+RUN make -C build-x64 ARCH=x86_64 VENDOR_CERT_FILE=../Cisco_Virtual_UEFI_SubCA_v3.der \
+    TOPDIR=.. -f ../Makefile
+
+# Final shim for installation
+RUN mkdir /shim-build/install
+RUN cp build-x64/shimx64.efi /shim-build/install
